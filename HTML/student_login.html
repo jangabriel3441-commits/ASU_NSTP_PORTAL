@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASU NSTP - Student Login</title>
+<link rel="stylesheet" href="../CSS/student_login.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="brand-panel" aria-labelledby="brand-title">
+      <a class="home-link" href="index.html" aria-label="Back to ASU NSTP Portal home">
+        <span class="home-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </span>
+        Portal Home
+      </a>
+
+      <div class="brand-content">
+        <img src="../asu-logo-transparent.png" alt="Aklan State University Seal" class="brand-logo">
+        <p class="eyebrow">Aklan State University</p>
+        <h1 id="brand-title">NSTP Student Portal</h1>
+        <p class="brand-text">
+          Access your National Service Training Program records, announcements,
+          downloadable forms, and student resources in one secure portal.
+        </p>
+
+        <div class="feature-grid" aria-label="Portal highlights">
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5z"/></svg>
+            </span>
+            <span>
+              <strong>Modules</strong>
+              <small>Review NSTP learning materials.</small>
+            </span>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></svg>
+            </span>
+            <span>
+              <strong>Schedules</strong>
+              <small>Keep track of activities and deadlines.</small>
+            </span>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </span>
+            <span>
+              <strong>Updates</strong>
+              <small>Receive announcements from NSTP staff.</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-panel" aria-labelledby="login-title">
+      <div class="login-card">
+        <div class="card-header">
+          <p class="card-kicker">Secure student access</p>
+          <h2 id="login-title">Student Login</h2>
+          <p>Sign in with your registered Student ID and password.</p>
+        </div>
+
+        <form class="login-form" id="studentLoginForm" novalidate>
+          <div class="field-group">
+            <label for="studentId">Student ID</label>
+            <div class="input-wrap">
+              <span class="input-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10"/><path d="M7 12h5"/></svg>
+              </span>
+              <input id="studentId" name="studentId" type="text" placeholder="e.g. 2024-00123" autocomplete="username" required>
+            </div>
+            <p class="field-error" id="studentIdError">Enter your Student ID.</p>
+          </div>
+
+          <div class="field-group">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <span class="input-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+            </div>
+            <p class="field-error" id="passwordError">Enter your password.</p>
+          </div>
+
+          <div class="form-options">
+            <label class="check-row" for="rememberMe">
+              <input id="rememberMe" name="rememberMe" type="checkbox">
+              <span>Remember me</span>
+            </label>
+
+            <label class="check-row" for="showPassword">
+              <input id="showPassword" type="checkbox">
+              <span>Show password</span>
+            </label>
+          </div>
+
+          <button class="login-button" type="submit">Login</button>
+
+          <div class="form-links">
+            <a href="#">Forgot Password?</a>
+            <span aria-hidden="true">|</span>
+            <a href="signup.html">Sign Up</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="../JS/student_login.js"></script>
+</body>
+</html>
