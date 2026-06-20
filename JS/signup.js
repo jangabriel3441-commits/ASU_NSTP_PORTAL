@@ -48,7 +48,7 @@
 
   function validateDate() {
     var valid = dateInput.value !== '';
-    showErr('err-date', !valid);
+    showErr('err-date', !valid);  
     setFieldError(dateInput, !valid);
     return valid;
   }

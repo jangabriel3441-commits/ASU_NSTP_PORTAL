@@ -33,6 +33,19 @@ body {
     #f5f8f3;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('../asu-logo-transparent.png');
+  background-repeat: no-repeat;
+  background-position: center 18%;
+  background-size: 48vmin;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
 a {
   color: inherit;
 }
@@ -55,6 +68,8 @@ a {
   box-shadow: var(--shadow);
   backdrop-filter: blur(18px);
 }
+
+.portal-shell { position: relative; z-index: 1; }
 
 .site-header {
   display: flex;

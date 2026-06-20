@@ -35,6 +35,18 @@ body {
   align-items: center;
   padding: 22px;
 }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('../asu-logo-transparent.png');
+  background-repeat: no-repeat;
+  background-position: center 18%;
+  background-size: 48vmin;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
 
 button {
   font: inherit;
@@ -48,6 +60,7 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow);
 }
+.phone { position: relative; z-index: 1; }
 
 .header {
   display: flex;

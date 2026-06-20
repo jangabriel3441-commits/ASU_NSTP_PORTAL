@@ -30,6 +30,19 @@ body {
     linear-gradient(135deg, #f4f8f1 0%, #edf6f0 48%, #fffaf0 100%);
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url('../asu-logo-transparent.png');
+  background-repeat: no-repeat;
+  background-position: center 18%;
+  background-size: 48vmin;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
 a {
   color: inherit;
 }
@@ -53,6 +66,8 @@ a {
   background: rgba(255, 255, 255, 0.86);
   box-shadow: var(--shadow);
 }
+
+.signup-page { position: relative; z-index: 1; }
 
 .brand-panel,
 .form-panel {
