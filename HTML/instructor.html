@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASU NSTP - Instructor Portal</title>
+  <link rel="stylesheet" href="../CSS/student.css">
+</head>
+<body>
+  <div class="phone">
+    <div class="header">
+      <a class="brand" href="#" aria-label="ASU NSTP Portal home">
+        <span class="brand-logo">
+          <img src="../asu-logo-transparent.png" alt="Aklan State University Seal">
+        </span>
+        <span>
+          <strong>ASU Instructor Portal</strong>
+          <small>Aklan State University</small>
+        </span>
+      </a>
+      <div class="status-pill"><span></span> LIVE</div>
+    </div>
+
+    <div class="hero">
+      <div>
+        <div class="welcome">Welcome back, <span>Prof. Santos</span></div>
+        <div class="hero-note">Your NSTP class updates are ready to share with students.</div>
+      </div>
+      <div class="hero-badge">Instructor ID 2024-INS06</div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="home">Home</button>
+      <button class="tab" data-tab="classes">Classes</button>
+      <button class="tab" data-tab="reports">Reports</button>
+    </div>
+
+    <div class="content">
+      <div class="panel active" id="panel-home">
+        <div class="card profile-card">
+          <div class="profile-row">
+            <div class="avatar-circle">PS</div>
+            <div class="profile-info">
+              <div class="name">Prof. Pia L. Santos</div>
+              <div class="id">NSTP Program Coordinator</div>
+              <button class="btn" onclick="alert('Opening instructor profile...')">View profile</button>
+            </div>
+          </div>
+          <div class="profile-metrics">
+            <div><strong>3</strong> active classes</div>
+            <div><strong>18</strong> assignments</div>
+            <div><strong>95%</strong> completion</div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="card mini-card">
+            <div class="card-header">Next session</div>
+            <div class="card-value">NSTP 102 • 1:00 PM</div>
+          </div>
+          <div class="card mini-card">
+            <div class="card-header">Office hours</div>
+            <div class="card-value">4:00 PM</div>
+          </div>
+          <div class="card mini-card">
+            <div class="card-header">Students online</div>
+            <div class="card-value">24</div>
+          </div>
+          <div class="card mini-card highlight-card">
+            <div class="card-header">Feedback</div>
+            <div class="card-value">Positive</div>
+          </div>
+        </div>
+
+        <div class="card progress-card">
+          <div class="card-header">Course progress</div>
+          <div class="progress-desc">NSTP Instructor Dashboard</div>
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <div class="progress-label" id="progress-label">Progress: 75%</div>
+          <button class="download" id="download-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download roster</span>
+          </button>
+        </div>
+
+        <div class="card notif-card">
+          <div class="card-header">Notifications</div>
+          <div class="notif-row">
+            <div class="bullet"></div>
+            <div>
+              New student submission received
+              <div class="notif-time">2 hours ago</div>
+            </div>
+          </div>
+          <div class="notif-row">
+            <div class="bullet"></div>
+            <div>
+              Class attendance updated
+              <div class="notif-time">45 minutes ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-classes">
+        <div class="module-item glow-card">
+          <div>
+            <div class="mname">NSTP 101</div>
+            <div class="mdesc">Civic welfare training</div>
+          </div>
+          <span class="mpct">On schedule</span>
+        </div>
+        <div class="module-item">
+          <div>
+            <div class="mname">NSTP 102</div>
+            <div class="mdesc">Community immersion</div>
+          </div>
+          <span class="mpct">8:30 AM</span>
+        </div>
+        <div class="module-item">
+          <div>
+            <div class="mname">NSTP 103</div>
+            <div class="mdesc">Project documentation</div>
+          </div>
+          <span class="mpct locked">Draft</span>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-reports">
+        <div class="card grades-card">
+          <div class="card-header">Instructor reports</div>
+          <table>
+            <tr><th>Report</th><th>Status</th><th>Action</th></tr>
+            <tr><td>Attendance</td><td>99%</td><td>Review</td></tr>
+            <tr><td>Submission</td><td>83%</td><td>Export</td></tr>
+            <tr><td>Feedback</td><td>4.8/5</td><td>View</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <button class="nav-btn active" data-tab="home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Home
+      </button>
+      <button class="nav-btn" data-tab="classes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        Classes
+      </button>
+      <button class="nav-btn" data-tab="reports">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+        Reports
+      </button>
+    </div>
+
+    <div class="footer">Version 2.0 · © 2026 ASU NSTP</div>
+  </div>
+
+  <script src="../JS/student.js"></script>
+</body>
+</html>
