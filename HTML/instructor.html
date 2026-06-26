@@ -100,6 +100,40 @@
             </div>
           </div>
         </div>
+        
+        <div class="card upload-card">
+          <div class="card-header">Insert Photo / Image</div>
+          <div class="upload-row">
+            <div class="upload-form">
+              <label>Quiz / Exam Title</label>
+              <input type="text" id="upload-title" placeholder="Enter title" />
+              <label>Status</label>
+              <select id="upload-status">
+                <option value="Published" selected>Published</option>
+                <option value="Draft">Draft</option>
+              </select>
+              <label>Choose image</label>
+              <input type="file" id="upload-file" accept="image/*" />
+              <div class="progress-area" id="upload-progress" aria-hidden="true">
+                <div class="progress-bar"><div class="progress-fill" id="upload-progress-fill"></div></div>
+                <div class="progress-text" id="upload-progress-text">0%</div>
+              </div>
+              <div class="upload-actions">
+                <button class="btn" id="preview-btn">Preview</button>
+                <button class="btn" id="publish-btn">Publish</button>
+              </div>
+            </div>
+            <div class="upload-preview">
+              <div class="preview-frame">
+                <img id="preview-image" src="" alt="Preview" />
+                <div class="preview-meta">
+                  <div id="preview-title">No preview</div>
+                  <div id="preview-instructor">Prof. Santos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="panel" id="panel-classes">
@@ -158,5 +192,6 @@
   </div>
 
   <script src="../JS/student.js"></script>
+  <script src="../JS/upload.js"></script>
 </body>
 </html>
